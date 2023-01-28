@@ -11,8 +11,8 @@ class UserCrud extends Controller
   public function index()
   {
     $userModel = new UserModel();
-    $data['users'] = $userModel->orderby('id' . 'DESC')->findAll();
-    return view('user_view', $data);
+    // $data['users'] = $userModel->orderby('id' . 'DESC')->findAll();
+    return view('user_view');
   }
 
   //add user form
